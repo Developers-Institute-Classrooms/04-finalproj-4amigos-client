@@ -1,9 +1,10 @@
 import React from "react";
+import "./review.css";
 
 const ReviewForm = () => {
   return (
-    <div>
-      <form className="main-block" action="/">
+    <div className="main-block">
+      <form action="/">
         <h1>Course Evaluation Form</h1>
         <p>
           W3docs provides free learning materials for programming languages like
