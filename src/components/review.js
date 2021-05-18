@@ -7,8 +7,9 @@ const ReviewForm = () => {
       <form action="/">
         <h1>Course Evaluation Form</h1>
         <p>
-          W3docs provides free learning materials for programming languages like
-          HTML, CSS, Java Script, PHP etc.
+          Students we ask for your honest feedback on how this semester was run
+          so that we can continuously improve and adjust how we run our
+          semesters.
         </p>
         <h3>Rate this course using the following scale:</h3>
         <p>1 - Rarely meets expectations</p>
@@ -18,7 +19,7 @@ const ReviewForm = () => {
         <p>5 - Consistently exceeds expectations</p>
         <div>
           <h4>
-            Course Offering<span class="required">*</span>
+            Questions<span className="required">*</span>
           </h4>
           <table>
             <tr>
@@ -30,7 +31,7 @@ const ReviewForm = () => {
               <th>5</th>
             </tr>
             <tr>
-              <td className="first-col">Course content met your needs</td>
+              <td className="Q1">Course content met your needs</td>
               <td>
                 <input type="radio" value="none" name="needs" required />
               </td>
@@ -58,8 +59,9 @@ const ReviewForm = () => {
               <th>5</th>
             </tr>
             <tr>
-              <td className="first-col">
-                Course materials, and educational resources
+              <td className="Q2">
+                Course materials and educational resources were relevant to the
+                topics
               </td>
               <td>
                 <input type="radio" value="none" name="resources" required />
@@ -88,38 +90,7 @@ const ReviewForm = () => {
               <th>5</th>
             </tr>
             <tr>
-              <td className="first-col">Class location & equipment</td>
-              <td>
-                <input type="radio" value="none" name="equipment" required />
-              </td>
-              <td>
-                <input type="radio" value="none" name="equipment" required />
-              </td>
-              <td>
-                <input type="radio" value="none" name="equipment" required />
-              </td>
-              <td>
-                <input type="radio" value="none" name="equipment" required />
-              </td>
-              <td>
-                <input type="radio" value="none" name="equipment" required />
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div>
-          <h4>Instructor Evaluation</h4>
-          <table>
-            <tr>
-              <th className="first-col"></th>
-              <th>1</th>
-              <th>2</th>
-              <th>3</th>
-              <th>4</th>
-              <th>5</th>
-            </tr>
-            <tr>
-              <td className="first-col">Knowledge of the subject matter</td>
+              <td className="Q3">Knowledge of the subject matter</td>
               <td>
                 <input type="radio" value="none" name="knowledge" />
               </td>
@@ -147,7 +118,7 @@ const ReviewForm = () => {
               <th>5</th>
             </tr>
             <tr>
-              <td className="first-col">
+              <td className="Q4">
                 Communicated the course material effectively
               </td>
               <td>
@@ -177,8 +148,8 @@ const ReviewForm = () => {
               <th>5</th>
             </tr>
             <tr>
-              <td className="first-col">
-                The instructor encouraged students to
+              <td className="Q5">
+                The instructor was punctual and classes were of a timely manner
               </td>
               <td>
                 <input type="radio" value="none" name="students" />
@@ -194,38 +165,11 @@ const ReviewForm = () => {
               </td>
               <td>
                 <input type="radio" value="none" name="students" />
-              </td>
-            </tr>
-          </table>
-          <table>
-            <tr>
-              <th className="first-col"></th>
-              <th>1</th>
-              <th>2</th>
-              <th>3</th>
-              <th>4</th>
-              <th>5</th>
-            </tr>
-            <tr>
-              <td className="first-col">Participate in course</td>
-              <td>
-                <input type="radio" value="none" name="participate" />
-              </td>
-              <td>
-                <input type="radio" value="none" name="participate" />
-              </td>
-              <td>
-                <input type="radio" value="none" name="participate" />
-              </td>
-              <td>
-                <input type="radio" value="none" name="participate" />
-              </td>
-              <td>
-                <input type="radio" value="none" name="participate" />
               </td>
             </tr>
           </table>
         </div>
+        <div> &nbsp;&nbsp; </div>
         <div className="comments-block">
           <h4 className="comments">
             Comments
@@ -237,26 +181,10 @@ const ReviewForm = () => {
             <textarea rows="5"></textarea>
           </div>
         </div>
-        <div className="radio-block">
-          <p className="question">May We Use Your Quotes / Comments?</p>
-          <div className="question-answer">
-            <div>
-              <input type="radio" value="none" id="radioYes" name="comments" />
-              <label for="radioYes" class="radio">
-                Yes
-              </label>
-            </div>
-            <div>
-              <input type="radio" value="none" id="radioNo" name="comments" />
-              <label for="radioNo" class="radio">
-                No
-              </label>
-            </div>
-          </div>
-        </div>
+        <div> &nbsp;&nbsp; </div>
         <div className="btn-block">
           <button type="submit" href="/">
-            Send
+            Submit
           </button>
         </div>
       </form>
