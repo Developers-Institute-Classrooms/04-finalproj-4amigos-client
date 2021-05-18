@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { createReview, getReviews } from "./services/apiClient";
+import ReviewForm from "./components/review";
 
 function App() {
   const [reviews, setReviews] = useState([]);
@@ -38,6 +39,7 @@ function App() {
   return (
     <div className="app">
       <h1>Reviews</h1>
+      <ReviewForm />
     </div>
 
     //     <ul>
