@@ -37,6 +37,9 @@ function App() {
 
   return (
     <div className="app">
+      <div className="review-logo">
+        <img src="/Review-logo.png" alt="educate/rate logo"></img>
+      </div>
       <h1>Reviews</h1>
     </div>
 
