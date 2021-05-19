@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { createReview, getReviews } from "./services/apiClient";
@@ -30,30 +29,37 @@ function App() {
   if (isLoading) {
     return (
       <div className="app">
-        <h1>Reviews</h1>
-        <p>Loading...</p>
+        <div>
+          <img
+            className="review-logo"
+            src="/Review-logo.png"
+            alt="educate/rate logo"
+          />
+        </div>
+        <div className="review-form">
+          <ReviewForm />
+        </div>
       </div>
     );
   }
 
   return (
     <div className="app">
-      <h1>Reviews</h1>
-      <ReviewForm />
+    <h1>Reviews</h1>
+
+      <div>
+        <img
+          className="review-logo"
+          src="/Review-logo.png"
+          alt="educate/rate logo"
+        />
+      </div>
+      <div className="review-form">
+        <ReviewForm />
+    
+      </div>       
+
     </div>
-
-    //     <ul>
-    //       {reviews.map((review) => (
-    //         <li key={review.id}>{review.description}</li>
-    //       ))}
-    //     </ul>
-
-    //     <form onClick={onClick}>
-    //       <input type="text" id="review" />
-    //       <button type="submit">Create Review</button>
-    //     </form>
-    //   </div>
-    // );
   );
 }
 export default App;
