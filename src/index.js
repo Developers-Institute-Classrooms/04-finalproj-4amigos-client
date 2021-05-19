@@ -8,7 +8,6 @@ import ReviewForm from "./components/review";
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <ReviewForm />
   </React.StrictMode>,
   document.getElementById("root")
 );
