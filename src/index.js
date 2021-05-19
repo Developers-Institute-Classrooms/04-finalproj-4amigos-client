@@ -3,12 +3,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import ReviewForm from "./components/review";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <ReviewForm />
   </React.StrictMode>,
   document.getElementById("root")
 );
