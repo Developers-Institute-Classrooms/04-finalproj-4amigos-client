@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { createReview, getReviews } from "./services/apiClient";
 import ReviewForm from "./components/review";
+import Logo from "./components/logo";
 
 function App() {
   const [reviews, setReviews] = useState([]);
@@ -29,13 +30,7 @@ function App() {
   if (isLoading) {
     return (
       <div className="app">
-        <div>
-          <img
-            className="review-logo"
-            src="/Review-logo.png"
-            alt="educate/rate logo"
-          />
-        </div>
+        <Logo />
         <div className="review-form">
           <ReviewForm />
         </div>
@@ -45,20 +40,11 @@ function App() {
 
   return (
     <div className="app">
-    <h1>Reviews</h1>
-
-      <div>
-        <img
-          className="review-logo"
-          src="/Review-logo.png"
-          alt="educate/rate logo"
-        />
-      </div>
+      <h1>Reviews</h1>
+      <Logo />
       <div className="review-form">
         <ReviewForm />
-    
-      </div>       
-
+      </div>
     </div>
   );
 }
