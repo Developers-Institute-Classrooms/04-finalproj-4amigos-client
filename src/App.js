@@ -45,6 +45,8 @@ function App() {
 
   return (
     <div className="app">
+    <h1>Reviews</h1>
+
       <div>
         <img
           className="review-logo"
@@ -54,7 +56,9 @@ function App() {
       </div>
       <div className="review-form">
         <ReviewForm />
-      </div>
+    
+      </div>       
+
     </div>
   );
 }
