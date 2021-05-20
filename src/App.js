@@ -41,7 +41,9 @@ function App() {
   return (
     <div className="app">
       <h1>Reviews</h1>
+
       <Logo />
+
       <div className="review-form">
         <ReviewForm />
       </div>
