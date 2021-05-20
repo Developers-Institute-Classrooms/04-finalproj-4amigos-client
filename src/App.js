@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { createReview, getReviews } from "./services/apiClient";
+import FormHeader from "./components/formheader";
+import NameAuth from "./components/authdetails";
 import ReviewForm from "./components/review";
 import Logo from "./components/logo";
 
@@ -43,7 +45,8 @@ function App() {
       <h1>Reviews</h1>
 
       <Logo />
-
+      <FormHeader />
+      <NameAuth />
       <div className="review-form">
         <ReviewForm />
       </div>
