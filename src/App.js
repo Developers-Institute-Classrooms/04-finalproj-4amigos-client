@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { createReview, getReviews } from "./services/apiClient";
 import ReviewForm from "./components/review";
+import Dropdown from "./components/dropdown";
 
 function App() {
   const [reviews, setReviews] = useState([]);
@@ -37,6 +38,7 @@ function App() {
           />
         </div>
         <div className="review-form">
+          <Dropdown />
           <ReviewForm />
         </div>
       </div>
@@ -45,7 +47,7 @@ function App() {
 
   return (
     <div className="app">
-    <h1>Reviews</h1>
+      <h1>Reviews</h1>
 
       <div>
         <img
@@ -55,10 +57,9 @@ function App() {
         />
       </div>
       <div className="review-form">
+        <Dropdown />
         <ReviewForm />
-    
-      </div>       
-
+      </div>
     </div>
   );
 }
