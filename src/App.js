@@ -5,15 +5,14 @@ import FormHeader from "./components/formheader";
 import NameAuth from "./components/authdetails";
 import ReviewForm from "./components/review";
 import Logo from "./components/logo";
+import Dropdown from "./components/dropdown";
 
 function App() {
   const [reviews, setReviews] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
 
   const fetchData = async () => {
     const reviews = await getReviews();
     setReviews(reviews);
-    setIsLoading(false);
   };
 
   useEffect(() => {
@@ -29,25 +28,14 @@ function App() {
     review.focus();
   };
 
-  if (isLoading) {
-    return (
-      <div className="app">
-        <Logo />
-        <div className="review-form">
-          <ReviewForm />
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="app">
-      <h1>Reviews</h1>
-
       <Logo />
       <FormHeader />
       <NameAuth />
+
       <div className="review-form">
+        <Dropdown />
         <ReviewForm />
       </div>
     </div>

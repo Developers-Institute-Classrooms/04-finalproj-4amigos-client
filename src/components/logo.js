@@ -10,7 +10,6 @@ const Logo = () => {
           alt="educate/rate logo"
         />
       </div>
-      <div className="blackstripe"></div>
     </div>
   );
 };
