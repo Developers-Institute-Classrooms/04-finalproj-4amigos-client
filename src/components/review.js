@@ -5,36 +5,6 @@ const ReviewForm = () => {
   return (
     <div className="main-block">
       <form action="/">
-        <h1>Course Evaluation Form</h1>
-        <p>
-          Students we ask for your honest feedback on how this semester was run
-          so that we can continuously improve and adjust how we run our
-          semesters.
-        </p>
-        <div> &nbsp;&nbsp; </div>
-        <div>
-          <label className="spacing">Name</label>
-          <input
-            className="form-row"
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Jane Doe"
-            required
-          />
-        </div>
-
-        <div>
-          <label className="spacing">Email</label>
-          <input
-            className="form-row"
-            type="text"
-            id="email"
-            name="email"
-            required
-          />
-        </div>
-
         <h3>Rate this course using the following scale:</h3>
         <p>1 - Rarely meets expectations</p>
         <p>2 - Sometimes meets expectations</p>
