@@ -88,13 +88,13 @@ button {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background: #095484;
+  background: goldenrod;
   font-size: 16px;
   color: #fff;
   cursor: pointer;
 }
 button:hover {
-  background: #0666a3;
+  background: #a39306;
 }
 @media (min-width: 568px) {
   .comments-block,
@@ -115,5 +115,18 @@ button:hover {
   th,
   td {
     word-break: keep-all;
+  }
+  .spacing {
+    display: block;
+    color: red;
+    margin-bottom: 0.2rem;
+  }
+  .form-row {
+    font-size: 0.9rem;
+    width: calc(100% - 15rem);
+    border: 1px solid #999;
+    /* border-radius: 0.5rem; */
+    padding: 1rem;
+    margin-bottom: 1rem;
   }
 }
