@@ -13,11 +13,9 @@ const ReviewForm = () => {
         </p>
         <div> &nbsp;&nbsp; </div>
         <div>
-          <label class="spacing" for="name">
-            Name
-          </label>
+          <label className="spacing">Name</label>
           <input
-            class="form-row"
+            className="form-row"
             type="text"
             id="name"
             name="name"
@@ -27,11 +25,9 @@ const ReviewForm = () => {
         </div>
 
         <div>
-          <label class="spacing" for="email">
-            Email
-          </label>
+          <label className="spacing">Email</label>
           <input
-            class="form-row"
+            className="form-row"
             type="text"
             id="email"
             name="email"
