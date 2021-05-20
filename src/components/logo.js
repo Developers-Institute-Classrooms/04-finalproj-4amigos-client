@@ -3,11 +3,14 @@ import React from "react";
 const Logo = () => {
   return (
     <div>
-      <img
-        className="review-logo"
-        src="/Review-logo.png"
-        alt="educate/rate logo"
-      />
+      <div className="logo">
+        <img
+          className="review-logo"
+          src="/Review-logo.png"
+          alt="educate/rate logo"
+        />
+      </div>
+      <div className="blackstripe"></div>
     </div>
   );
 };
