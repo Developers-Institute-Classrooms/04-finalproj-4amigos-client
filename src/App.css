@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,10 +15,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.review-from {
-  margin: 0.5rem;
+  padding: 2rem;
 }
 
 @keyframes App-logo-spin {

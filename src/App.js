@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { createReview, getReviews } from "./services/apiClient";
+import Logo from "./components/logo";
 import ReviewForm from "./components/review";
 import Dropdown from "./components/dropdown";
 
@@ -30,13 +31,7 @@ function App() {
   if (isLoading) {
     return (
       <div className="app">
-        <div>
-          <img
-            className="review-logo"
-            src="/Review-logo.png"
-            alt="educate/rate logo"
-          />
-        </div>
+        <Logo />
         <div className="review-form">
           <Dropdown />
           <ReviewForm />
@@ -48,14 +43,8 @@ function App() {
   return (
     <div className="app">
       <h1>Reviews</h1>
+      <Logo />
 
-      <div>
-        <img
-          className="review-logo"
-          src="/Review-logo.png"
-          alt="educate/rate logo"
-        />
-      </div>
       <div className="review-form">
         <Dropdown />
         <ReviewForm />
