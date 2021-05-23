@@ -10,19 +10,10 @@
 }
 
 .review-logo {
-  height: 7.5rem;
-  width: 7.5rem;
+  height: 9.5rem;
+  width: 9.5rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
