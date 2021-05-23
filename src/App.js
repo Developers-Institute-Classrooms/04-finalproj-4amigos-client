@@ -3,6 +3,7 @@ import "./App.css";
 import { createReview, getReviews } from "./services/apiClient";
 import FormHeader from "./components/formheader";
 import NameAuth from "./components/authdetails";
+import ScaleRating from "./components/scale";
 import ReviewForm from "./components/review";
 import Logo from "./components/logo";
 import Dropdown from "./components/dropdown";
@@ -36,6 +37,7 @@ function App() {
 
       <div className="review-form">
         <Dropdown />
+        <ScaleRating />
         <ReviewForm />
       </div>
     </div>

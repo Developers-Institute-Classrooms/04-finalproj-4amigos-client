@@ -5,15 +5,9 @@ const ReviewForm = () => {
   return (
     <div className="main-block">
       <form action="/">
-        <h3>Rate this course using the following scale:</h3>
-        <p>1 - Rarely meets expectations</p>
-        <p>2 - Sometimes meets expectations</p>
-        <p>3 - Meets expectations</p>
-        <p>4 - Frequently exceeds expectations</p>
-        <p>5 - Consistently exceeds expectations</p>
         <div>
           <h4>
-            Questions<span className="required">*</span>
+            Questions<span className="required"></span>
           </h4>
           <table>
             <tbody>
