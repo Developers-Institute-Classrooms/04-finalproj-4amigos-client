@@ -9,12 +9,13 @@ p {
   margin: 0;
   outline: none;
   font-family: Roboto, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 0.7rem;
   color: #666;
   line-height: 22px;
 }
 h1 {
   font-weight: 400;
+  text-align: center;
 }
 h4 {
   margin-bottom: 0;
@@ -34,7 +35,7 @@ span .required {
 form {
   width: 100%;
   padding: 20px;
-  box-shadow: 0 2px 5px #ccc;
+  /* box-shadow: 0 2px 5px #ccc; */
   background: #fff;
 }
 th,
@@ -46,6 +47,7 @@ td {
   font-weight: 400;
   word-break: break-all;
 }
+
 .first-col {
   width: 38%;
   text-align: left;
@@ -76,7 +78,7 @@ small {
 }
 textarea {
   width: calc(100% - 6px);
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .question-answer > div {
   display: inline-block;
@@ -86,19 +88,60 @@ textarea {
   text-align: center;
 }
 button {
-  width: 150px;
+  width: 5.5rem;
   padding: 10px;
   border: none;
   border-radius: 5px;
   background: goldenrod;
-  font-size: 16px;
+  font-size: 0.8rem;
   color: #fff;
   cursor: pointer;
 }
 button:hover {
   background: #a39306;
 }
-@media (min-width: 568px) {
+.spacing {
+  display: block;
+  color: red;
+  margin-bottom: 0.2rem;
+  margin-left: 0.5rem;
+}
+.form-row {
+  font-size: 0.8rem;
+  width: 10rem;
+  border: 1px solid #999;
+  border-radius: 0.2rem;
+  padding: 0.15rem;
+  margin-bottom: 0.3rem;
+  margin-left: 0.5rem;
+}
+select {
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 0.65rem;
+}
+#form1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#instructor {
+  margin-left: 1.9rem;
+}
+.review-logo {
+  height: 9.5rem;
+  width: 9.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+.formheader {
+  text-align: center;
+}
+@media (min-width: 30rem) {
   .comments-block,
   .radio-block {
     display: flex;
@@ -122,13 +165,56 @@ button:hover {
     display: block;
     color: red;
     margin-bottom: 0.2rem;
+    margin-left: 0.5rem;
   }
   .form-row {
     font-size: 0.9rem;
-    width: calc(100% - 15rem);
+    width: 20rem;
     border: 1px solid #999;
-    /* border-radius: 0.5rem; */
-    padding: 1rem;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
     margin-bottom: 1rem;
+    margin-left: 0.5rem;
   }
+  .review-logo {
+    height: 12.5rem;
+    width: 12.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+  }
+  /* select {
+    margin-left: 19%;
+    margin-right: 79%;
+  } */
+}
+@media (min-width: 60rem) {
+  .spacing {
+    display: block;
+    color: red;
+    margin-bottom: 0.2rem;
+    margin-left: 0.5rem;
+  }
+  .form-row {
+    font-size: 0.9rem;
+    width: 25rem;
+    border: 1px solid #999;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+  }
+  .review-logo {
+    height: 15rem;
+    width: 15rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+  }
+  /* select {
+    margin-left: 9%;
+    margin-right: 91%;
+  } */
 }
