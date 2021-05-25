@@ -1,7 +1,7 @@
 import React from "react";
 import "./review.css";
 
-const NameAuth = () => {
+const ValidateForm = () => {
   return (
     <div className="main-block">
       <form action="/">
@@ -10,26 +10,19 @@ const NameAuth = () => {
           <input
             className="form-row"
             type="text"
-            id="name"
             name="name"
-            placeholder="Jane Doe"
+            placeholder="Your Name"
             required
           />
         </div>
 
         <div>
           <label className="spacing">Email</label>
-          <input
-            className="form-row"
-            type="text"
-            id="email"
-            name="email"
-            required
-          />
+          <input className="form-row" type="text" name="email" required />
         </div>
       </form>
     </div>
   );
 };
 
-export default NameAuth;
+export default ValidateForm;

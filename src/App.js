@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { createReview, getReviews } from "./services/apiClient";
-import FormHeader from "./components/formheader";
-import NameAuth from "./components/authdetails";
+import StudentFormHeader from "./components/studentformheader";
+import ValidateForm from "./components/authdetails";
 import ScaleRating from "./components/scale";
 import ReviewForm from "./components/review";
 import Logo from "./components/logo";
@@ -20,9 +20,9 @@ function App() {
     fetchData();
   }, []);
 
-  const onClick = async (e) => {
-    e.preventDefault();
-    const { review } = e.target.elements;
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const { review } = event.target.elements;
     const newReview = await createReview({ description: review.value });
     setReviews([...reviews, newReview]);
     review.value = "";
@@ -32,8 +32,8 @@ function App() {
   return (
     <div className="app">
       <Logo />
-      <FormHeader />
-      <NameAuth />
+      <StudentFormHeader />
+      <ValidateForm />
 
       <div className="review-form">
         <Dropdown />
