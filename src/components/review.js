@@ -4,7 +4,7 @@ import "./review.css";
 const ReviewForm = () => {
   return (
     <div className="main-block">
-      <form action="/">
+      <form action="/" onSubmit={onSubmit}>
         <div>
           <h4>
             Questions<span className="required"></span>
@@ -91,19 +91,19 @@ const ReviewForm = () => {
               <tr>
                 <td className="Q3">Knowledge of the subject matter</td>
                 <td>
-                  <input type="radio" value="none" name="knowledge" />
+                  <input type="radio" value="none" name="knowledge" required />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="knowledge" />
+                  <input type="radio" value="none" name="knowledge" required />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="knowledge" />
+                  <input type="radio" value="none" name="knowledge" required />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="knowledge" />
+                  <input type="radio" value="none" name="knowledge" required />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="knowledge" />
+                  <input type="radio" value="none" name="knowledge" required />
                 </td>
               </tr>
             </tbody>
@@ -125,19 +125,44 @@ const ReviewForm = () => {
                   Communicated the course material effectively
                 </td>
                 <td>
-                  <input type="radio" value="none" name="effectively" />
+                  <input
+                    type="radio"
+                    value="none"
+                    name="effectively"
+                    required
+                  />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="effectively" />
+                  <input
+                    type="radio"
+                    value="none"
+                    name="effectively"
+                    required
+                  />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="effectively" />
+                  <input
+                    type="radio"
+                    value="none"
+                    name="effectively"
+                    required
+                  />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="effectively" />
+                  <input
+                    type="radio"
+                    value="none"
+                    name="effectively"
+                    required
+                  />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="effectively" />
+                  <input
+                    type="radio"
+                    value="none"
+                    name="effectively"
+                    required
+                  />
                 </td>
               </tr>
             </tbody>
@@ -160,19 +185,19 @@ const ReviewForm = () => {
                   manner
                 </td>
                 <td>
-                  <input type="radio" value="none" name="students" />
+                  <input type="radio" value="none" name="students" required />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="students" />
+                  <input type="radio" value="none" name="students" required />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="students" />
+                  <input type="radio" value="none" name="students" required />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="students" />
+                  <input type="radio" value="none" name="students" required />
                 </td>
                 <td>
-                  <input type="radio" value="none" name="students" />
+                  <input type="radio" value="none" name="students" required />
                 </td>
               </tr>
             </tbody>

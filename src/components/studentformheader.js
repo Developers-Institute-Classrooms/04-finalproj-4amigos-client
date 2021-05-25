@@ -1,7 +1,7 @@
 import React from "react";
 import "./review.css";
 
-const FormHeader = () => {
+const StudentFormHeader = () => {
   return (
     <div className="main-block">
       <form action="/">
@@ -16,4 +16,4 @@ const FormHeader = () => {
   );
 };
 
-export default FormHeader;
+export default StudentFormHeader;
