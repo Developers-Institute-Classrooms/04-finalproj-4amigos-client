@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./review.css";
 import api from "../services/apiClient";
 
@@ -12,16 +11,16 @@ const Dropdown = () => {
       setDropDownItems(results);
     } catch (err) {
       console.error(`Error ${err.message}`);
+      setDropDownItems([]);
     }
   };
-
   useEffect(() => {
     fetchData();
   }, []);
 
   return (
     <div>
-      <div name="form1" id="form1" action="/action_page.php">
+      <div id="form1" action="/action_page.php">
         Instructor:{" "}
         <select name="instructor" id="instructor">
           {dropDownItems.map((dropDownItem, key) => (
