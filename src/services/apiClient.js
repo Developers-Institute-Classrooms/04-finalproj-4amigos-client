@@ -9,14 +9,14 @@ const createReview = async (body) => {
   return await response.json();
 };
 
-const getReviews = async () => {
-  const response = await fetch("/api/review");
-  return await response.json();
-};
+// const getReviews = async () => {
+//   const response = await fetch("/api/review");
+//   return await response.json();
+// };
 
 const instructors = async () => {
   const response = await fetch("/api/instructors");
   return await response.json();
 };
 
-module.exports = { createReview, getReviews, instructors };
+module.exports = { createReview, instructors };
