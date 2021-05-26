@@ -3,200 +3,192 @@ import "./review.css";
 
 const ReviewForm = () => {
   return (
-    <div className="main-block">
-      <form action="/">
-        <div>
-          <h4>
-            Questions<span className="required"></span>
-          </h4>
-          <table>
-            <tbody>
-              <tr>
-                <th className="first-col"></th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td className="Q1">Course content met your needs</td>
-                <td>
-                  <input type="radio" value="none" name="needs" required />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="needs" required />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="needs" required />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="needs" required />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="needs" required />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <tbody>
-              <tr>
-                <th className="first-col"></th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td className="Q2">
-                  Course materials and educational resources were relevant to
-                  the topics
-                </td>
-                <td>
-                  <input type="radio" value="none" name="resources" required />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="resources" required />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="resources" required />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="resources" required />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="resources" required />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <tbody>
-              <tr>
-                <th className="first-col"></th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td className="Q3">Knowledge of the subject matter</td>
-                <td>
-                  <input type="radio" value="none" name="knowledge" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="knowledge" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="knowledge" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="knowledge" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="knowledge" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <tbody>
-              <tr>
-                <th className="first-col"></th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td className="Q4">
-                  Communicated the course material effectively
-                </td>
-                <td>
-                  <input type="radio" value="none" name="effectively" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="effectively" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="effectively" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="effectively" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="effectively" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <tbody>
-              <tr>
-                <th className="first-col"></th>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td className="Q5">
-                  The instructor was punctual and classes were of a timely
-                  manner
-                </td>
-                <td>
-                  <input type="radio" value="none" name="students" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="students" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="students" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="students" />
-                </td>
-                <td>
-                  <input type="radio" value="none" name="students" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <div className="main-block" action="/">
+      <div>
+        <h4>
+          Questions<span className="required"></span>
+        </h4>
+        <table>
+          <tbody>
+            <tr>
+              <th className="first-col"></th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td className="Q1">Course content met your needs</td>
+              <td>
+                <input type="radio" value="1" name="content" required />
+              </td>
+              <td>
+                <input type="radio" value="2" name="content" required />
+              </td>
+              <td>
+                <input type="radio" value="3" name="content" required />
+              </td>
+              <td>
+                <input type="radio" value="4" name="content" required />
+              </td>
+              <td>
+                <input type="radio" value="5" name="content" required />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <tbody>
+            <tr>
+              <th className="first-col"></th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td className="Q2">
+                Course materials and educational resources were relevant to the
+                topics
+              </td>
+              <td>
+                <input type="radio" value="1" name="resources" required />
+              </td>
+              <td>
+                <input type="radio" value="2" name="resources" required />
+              </td>
+              <td>
+                <input type="radio" value="3" name="resources" required />
+              </td>
+              <td>
+                <input type="radio" value="4" name="resources" required />
+              </td>
+              <td>
+                <input type="radio" value="5" name="resources" required />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <tbody>
+            <tr>
+              <th className="first-col"></th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td className="Q3">Knowledge of the subject matter</td>
+              <td>
+                <input type="radio" value="1" name="knowledge" required />
+              </td>
+              <td>
+                <input type="radio" value="2" name="knowledge" required />
+              </td>
+              <td>
+                <input type="radio" value="3" name="knowledge" required />
+              </td>
+              <td>
+                <input type="radio" value="4" name="knowledge" required />
+              </td>
+              <td>
+                <input type="radio" value="5" name="knowledge" required />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <tbody>
+            <tr>
+              <th className="first-col"></th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td className="Q4">
+                Communicated the course material effectively
+              </td>
+              <td>
+                <input type="radio" value="1" name="communication" required />
+              </td>
+              <td>
+                <input type="radio" value="2" name="communication" required />
+              </td>
+              <td>
+                <input type="radio" value="3" name="communication" required />
+              </td>
+              <td>
+                <input type="radio" value="4" name="communication" required />
+              </td>
+              <td>
+                <input type="radio" value="5" name="communication" required />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <tbody>
+            <tr>
+              <th className="first-col"></th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td className="Q5">
+                The instructor was punctual and classes were of a timely manner
+              </td>
+              <td>
+                <input type="radio" value="1" name="timely" required />
+              </td>
+              <td>
+                <input type="radio" value="2" name="timely" required />
+              </td>
+              <td>
+                <input type="radio" value="3" name="timely" required />
+              </td>
+              <td>
+                <input type="radio" value="4" name="timely" required />
+              </td>
+              <td>
+                <input type="radio" value="5" name="timely" required />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div> &nbsp;&nbsp; </div>
+      <div className="comments-block">
+        <h4 className="comments">
+          Comments
+          <small>
+            Please let us know what could be done to improve this course
+          </small>
+        </h4>
+        <div className="answer">
+          <textarea name="comment" rows="5"></textarea>
         </div>
-        <div> &nbsp;&nbsp; </div>
-        <div className="comments-block">
-          <h4 className="comments">
-            Comments
-            <small>
-              Please let us know what could be done to improve this course
-            </small>
-          </h4>
-          <div className="answer">
-            <textarea rows="5"></textarea>
-          </div>
-        </div>
-        <div> &nbsp;&nbsp; </div>
-        <div className="btn-block">
-          <button type="submit" href="/">
-            Submit
-          </button>
-        </div>
-      </form>
+      </div>
+      <div> &nbsp;&nbsp; </div>
     </div>
   );
 };
