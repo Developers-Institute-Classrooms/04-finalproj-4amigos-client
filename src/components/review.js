@@ -23,19 +23,19 @@ const ReviewForm = () => {
             <tr>
               <td className="Q1">Course content met your needs</td>
               <td>
-                <input type="radio" value="1" name="needs" required />
+                <input type="radio" value="1" name="content" required />
               </td>
               <td>
-                <input type="radio" value="2" name="needs" required />
+                <input type="radio" value="2" name="content" required />
               </td>
               <td>
-                <input type="radio" value="3" name="needs" required />
+                <input type="radio" value="3" name="content" required />
               </td>
               <td>
-                <input type="radio" value="4" name="needs" required />
+                <input type="radio" value="4" name="content" required />
               </td>
               <td>
-                <input type="radio" value="5" name="needs" required />
+                <input type="radio" value="5" name="content" required />
               </td>
             </tr>
           </tbody>
@@ -124,19 +124,19 @@ const ReviewForm = () => {
                 Communicated the course material effectively
               </td>
               <td>
-                <input type="radio" value="1" name="effectively" required />
+                <input type="radio" value="1" name="communication" required />
               </td>
               <td>
-                <input type="radio" value="2" name="effectively" required />
+                <input type="radio" value="2" name="communication" required />
               </td>
               <td>
-                <input type="radio" value="3" name="effectively" required />
+                <input type="radio" value="3" name="communication" required />
               </td>
               <td>
-                <input type="radio" value="4" name="effectively" required />
+                <input type="radio" value="4" name="communication" required />
               </td>
               <td>
-                <input type="radio" value="5" name="effectively" required />
+                <input type="radio" value="5" name="communication" required />
               </td>
             </tr>
           </tbody>
@@ -158,19 +158,19 @@ const ReviewForm = () => {
                 The instructor was punctual and classes were of a timely manner
               </td>
               <td>
-                <input type="radio" value="1" name="students" required />
+                <input type="radio" value="1" name="timely" required />
               </td>
               <td>
-                <input type="radio" value="2" name="students" required />
+                <input type="radio" value="2" name="timely" required />
               </td>
               <td>
-                <input type="radio" value="3" name="students" required />
+                <input type="radio" value="3" name="timely" required />
               </td>
               <td>
-                <input type="radio" value="4" name="students" required />
+                <input type="radio" value="4" name="timely" required />
               </td>
               <td>
-                <input type="radio" value="5" name="students" required />
+                <input type="radio" value="5" name="timely" required />
               </td>
             </tr>
           </tbody>
