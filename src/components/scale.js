@@ -3,7 +3,7 @@ import "./review.css";
 
 const ScaleRating = () => {
   return (
-    <div className="main-block">
+    <div className="main-block" action="/">
       <h3>Rate this course using the following scale:</h3>
       <p>1 - Rarely meets expectations</p>
       <p>2 - Sometimes meets expectations</p>

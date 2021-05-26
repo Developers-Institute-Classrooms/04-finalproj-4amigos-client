@@ -17,7 +17,13 @@ const ValidateForm = () => {
 
       <div>
         <label className="spacing">Email</label>
-        <input className="form-row" type="text" name="email" required />
+        <input
+          className="form-row"
+          type="text"
+          name="email"
+          placeholder="yourname@school.com"
+          required
+        />
       </div>
     </div>
   );
