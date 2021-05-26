@@ -20,14 +20,14 @@ function App() {
     fetchData();
   }, []);
 
-  const onSubmit = async((event) => {
-    event.preventDefault();
-    const { review } = event.target.elements;
-    const newReview = await createReview({ description: review.value });
-    setReviews([...reviews, newReview]);
-    review.value = "";
-    review.focus();
-  });
+  // const onSubmit = async((event) => {
+  //   event.preventDefault();
+  //   const { review } = event.target.elements;
+  //   const newReview = await createReview({ description: review.value });
+  //   setReviews([...reviews, newReview]);
+  //   review.value = "";
+  //   review.focus();
+  // });
 
   return (
     <div className="app">
