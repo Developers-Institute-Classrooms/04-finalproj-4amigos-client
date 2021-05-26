@@ -16,4 +16,4 @@ const getReviews = async () => {
   return reviews;
 };
 
-export { createReview, getReviews };
+module.exports = { createReview, getReviews };

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { createReview, getReviews } from "./services/apiClient";
+import { getReviews } from "./services/apiClient";
 import FormHeader from "./components/formheader";
 import NameAuth from "./components/authdetails";
 import ScaleRating from "./components/scale";
@@ -20,14 +20,14 @@ function App() {
     fetchData();
   }, []);
 
-  const onClick = async (e) => {
-    e.preventDefault();
-    const { review } = e.target.elements;
+  const onSubmit = async((event) => {
+    event.preventDefault();
+    const { review } = event.target.elements;
     const newReview = await createReview({ description: review.value });
     setReviews([...reviews, newReview]);
     review.value = "";
     review.focus();
-  };
+  });
 
   return (
     <div className="app">
