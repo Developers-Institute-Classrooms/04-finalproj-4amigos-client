@@ -1,5 +1,5 @@
 const createReview = async (body) => {
-  const response = await fetch("/api/reviews", {
+  const response = await fetch("/api/review", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -11,7 +11,7 @@ const createReview = async (body) => {
 };
 
 const getReviews = async () => {
-  const response = await fetch("/api/reviews");
+  const response = await fetch("/api/review");
   const reviews = await response.json();
   return reviews;
 };
