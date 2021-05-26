@@ -23,9 +23,7 @@ function App() {
   }, []);
 
   const onSubmit = async (event) => {
-    {
-      alert("Thank you for completing our review!");
-    }
+    alert("Thank you for completing our review!");
 
     const inputs = event.target.elements;
     const data = {
