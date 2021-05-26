@@ -4,31 +4,20 @@ import "./review.css";
 import api from "../services/apiClient";
 
 const Dropdown = () => {
-  const [class_name, setClass_name] = useState([]);
-  const [term, setTerm] = useState([]);
-  const [instructor, setInstructor] = useState([]);
+  const [dropDownItems, setDropDownItems] = useState([]);
+
+  const fetchData = async () => {
+    try {
+      const results = await api.instructors();
+      setDropDownItems(results);
+    } catch (err) {
+      console.error(`Error ${err.message}`);
+    }
+  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const result = await api.instructors(class_name, term, instructor);
-        if (!result.ok) {
-          throw new Error("API Error");
-        }
-        const classResults = await result.json();
-        setClass_name(classResults.class_name);
-        const termResults = await result.json();
-        setTerm(termResults.term);
-        const instructorResults = await result.json();
-        if (instructorResults.person_type === instructor) {
-          setInstructor(instructorResults.instructor);
-        }
-      } catch (err) {
-        console.error(`Error ${err.message}`);
-      }
-    };
     fetchData();
-  }, [class_name, term, instructor]);
+  }, []);
 
   return (
     <div>
@@ -36,25 +25,31 @@ const Dropdown = () => {
         <div>
           Instructor:{" "}
           <select name="instructor" id="instructor">
-            <option value="" required>
-              {instructor.map}
-            </option>
+            {dropDownItems.map((dropDownItem, key) => (
+              <option value={dropDownItem.person_name} key={key} required>
+                {dropDownItem.person_name}
+              </option>
+            ))}
           </select>
         </div>
         <div>
           Semester Term:{" "}
           <select name="chapter" id="chapter">
-            <option value="" required>
-              {term.map}
-            </option>
+            {dropDownItems.map((dropDownItem, key) => (
+              <option value={dropDownItem.term} key={key} required>
+                {dropDownItem.term}
+              </option>
+            ))}
           </select>
         </div>
         <div>
           Semester Topic:{" "}
           <select name="topic" id="topic">
-            <option value="" required>
-              {class_name.map}
-            </option>
+            {dropDownItems.map((dropDownItem, key) => (
+              <option value={dropDownItem.class_name} key={key} required>
+                {dropDownItem.class_name}
+              </option>
+            ))}
           </select>
         </div>
       </form>
