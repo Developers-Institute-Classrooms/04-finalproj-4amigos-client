@@ -4,14 +4,12 @@ import "./review.css";
 const ScaleRating = () => {
   return (
     <div className="main-block">
-      <form action="/">
-        <h3>Rate this course using the following scale:</h3>
-        <p>1 - Rarely meets expectations</p>
-        <p>2 - Sometimes meets expectations</p>
-        <p>3 - Meets expectations</p>
-        <p>4 - Frequently exceeds expectations</p>
-        <p>5 - Consistently exceeds expectations</p>
-      </form>
+      <h3>Rate this course using the following scale:</h3>
+      <p>1 - Rarely meets expectations</p>
+      <p>2 - Sometimes meets expectations</p>
+      <p>3 - Meets expectations</p>
+      <p>4 - Frequently exceeds expectations</p>
+      <p>5 - Consistently exceeds expectations</p>
     </div>
   );
 };

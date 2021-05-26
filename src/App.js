@@ -36,9 +36,14 @@ function App() {
       <ValidateForm />
 
       <div className="review-form">
-        <Dropdown />
-        <ScaleRating />
-        <ReviewForm />
+        <form onSubmit={onSubmit}>
+          <Dropdown />
+          <ScaleRating />
+          <ReviewForm />
+          <button type="submit" href="/">
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );
