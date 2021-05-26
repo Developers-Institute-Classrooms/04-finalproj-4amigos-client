@@ -6,20 +6,17 @@ const createReview = async (body) => {
     },
     body: JSON.stringify(body),
   });
-  const review = await response.json();
-  return review;
+  return await response.json();
 };
 
 const getReviews = async () => {
   const response = await fetch("/api/review");
-  const reviews = await response.json();
-  return reviews;
+  return await response.json();
 };
 
 const instructors = async () => {
   const response = await fetch("/api/instructors");
-  const reviews = await response.json();
-  return reviews;
+  return await response.json();
 };
 
 module.exports = { createReview, getReviews, instructors };

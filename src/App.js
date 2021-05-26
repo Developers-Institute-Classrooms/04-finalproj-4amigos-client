@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import "./components/review.css";
-import { createReview, getReviews } from "./services/apiClient";
+import { createReview } from "./services/apiClient";
 import StudentFormHeader from "./components/studentformheader";
 import ValidateForm from "./components/authdetails";
 import ScaleRating from "./components/scale";
@@ -13,6 +13,7 @@ function App() {
   // const [reviews, setReviews] = useState([]);
 
   const fetchData = async () => {
+    // TODO: connect to getReviews route and have data return
     // const reviews = await getReviews();
     // setReviews(reviews);
   };
@@ -22,8 +23,10 @@ function App() {
   }, []);
 
   const onSubmit = async (event) => {
-    event.preventDefault();
-    // fix me with change to React approach using setState
+    {
+      alert("Thank you for completing our review!");
+    }
+
     const inputs = event.target.elements;
     const data = {
       reviewer_name: inputs.name.value,
@@ -42,6 +45,7 @@ function App() {
     await createReview(data);
     // setReviews([...reviews, newReview]);
     event.target.focus();
+    onSubmit.addEventListener("click", onSubmit);
   };
 
   return (
