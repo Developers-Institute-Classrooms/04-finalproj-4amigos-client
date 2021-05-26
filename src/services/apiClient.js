@@ -10,10 +10,10 @@
 //   return review;
 // };
 
-const instructors = async () => {
-  const response = await fetch("/api/instructorList");
+const getReviews = async () => {
+  const response = await fetch("/api/reviews");
   const reviews = await response.json();
   return reviews;
 };
 
-module.exports = { instructors };
+module.exports = { getReviews };
