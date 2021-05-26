@@ -9,7 +9,7 @@ p {
   margin: 0;
   outline: none;
   font-family: Roboto, Arial, sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #666;
   line-height: 1.25rem;
 }
@@ -25,12 +25,12 @@ hr {
 }
 span .required {
   color: red;
+  margin: 2rem;
 }
 .main-block {
-  display: flex;
-  justify-content: center;
   align-items: center;
   padding: 3px;
+  width: 100%;
 }
 form {
   width: 100%;
@@ -58,7 +58,9 @@ textarea:hover {
 }
 .comments-block,
 .radio-block {
-  margin: 30px 0;
+  margin: 1.5rem 0;
+  /* display: flex;
+  flex-direction: column; */
 }
 .comments,
 .question,
@@ -79,7 +81,7 @@ small {
   opacity: 0.5;
 }
 textarea {
-  width: calc(100% - 6px);
+  width: calc(100% - 2rem);
   margin-top: 1.5rem;
 }
 .question-answer > div {
@@ -98,6 +100,9 @@ button {
   font-size: 0.8rem;
   color: #fff;
   cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 button:hover {
   background: #a39306;
@@ -109,13 +114,16 @@ button:hover {
   margin-left: 0.5rem;
 }
 .form-row {
-  font-size: 1rem;
+  font-size: 0.7rem;
   width: 10rem;
   border: 1px solid #999;
   border-radius: 0.2rem;
   padding: 0.15rem;
   margin-bottom: 0.3rem;
   margin-left: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 select {
   padding: 0.3rem;
@@ -129,7 +137,7 @@ select {
   margin-right: auto;
 }
 #instructor {
-  margin-left: 2.3rem;
+  margin-left: 1.75rem;
 }
 .review-logo {
   height: 9.5rem;
@@ -143,6 +151,10 @@ select {
 .formheader {
   text-align: center;
   line-height: 1rem;
+}
+.comments-block {
+  display: flex;
+  flex-direction: row;
 }
 @media (min-width: 30rem) {
   .comments-block,
@@ -171,7 +183,7 @@ select {
     margin-left: 0.5rem;
   }
   .form-row {
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 20rem;
     border: 1px solid #999;
     border-radius: 0.3rem;
@@ -187,6 +199,18 @@ select {
     margin-right: auto;
     padding: 2rem;
   }
+  .main-block div,
+  form,
+  input,
+  p {
+    font-size: 1rem;
+  }
+  button {
+    width: 6.2rem;
+    padding: 0.65rem;
+    font-size: 1rem;
+  }
+
   /* select {
     margin-left: 19%;
     margin-right: 79%;
@@ -200,7 +224,7 @@ select {
     margin-left: 0.5rem;
   }
   .form-row {
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 25rem;
     border: 1px solid #999;
     border-radius: 0.3rem;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import "./components/review.css";
 import { createReview, getReviews } from "./services/apiClient";
 import StudentFormHeader from "./components/studentformheader";
 import ValidateForm from "./components/authdetails";
