@@ -46,6 +46,8 @@ function App() {
     await createReview(data);
     // setReviews([...reviews, newReview]);
     event.target.focus();
+    // comment ...
+    event.target.form.reset();
   };
 
   return (
