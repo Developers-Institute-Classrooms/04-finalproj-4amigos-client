@@ -19,4 +19,4 @@ const instructors = async () => {
   return await response.json();
 };
 
-module.exports = { createReview, instructors };
+export { createReview, instructors };

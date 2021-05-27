@@ -18,3 +18,9 @@ The data the is displayed in the React app requires a link to the database which
 
 04-finalproj-4amigos-server
 Which can be found on GitHub: https://github.com/Developers-Institute-Classrooms/04-finalproj-4amigos-server.git
+
+AWS Pipeline:
+export AWS_PROFILE=copilot
+copilot svc show
+click api or client
+foura-Publi-1CZTTSORVN98X-1266955859.us-east-2.elb.amazonaws.com
