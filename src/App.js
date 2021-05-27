@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import "./components/review.css";
-import { createReview } from "./services/apiClient";
+import createReview from "./services/apiClient";
 import StudentFormHeader from "./components/studentformheader";
 import ValidateForm from "./components/authdetails";
 import ScaleRating from "./components/scale";
