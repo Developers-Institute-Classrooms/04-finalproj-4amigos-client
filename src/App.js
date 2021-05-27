@@ -23,9 +23,12 @@ function App() {
   }, []);
 
   const onSubmit = async (event) => {
+    event.preventDefault();
+
+    //TODO: alert to be replaced with an onSubmit event that clears the page and returns the summary of reviews submitted, along with a message that says "thanks for completing our review".  So that the reviewer knows their review has been submitted.  This alert is a placeholder only so that the person submitting knows their review has been completed.
     alert("Thank you for completing our review!");
 
-    const inputs = event.target.elements;
+    const inputs = event.target.form.elements;
     const data = {
       reviewer_name: inputs.name.value,
       email: inputs.email.value,
@@ -43,7 +46,6 @@ function App() {
     await createReview(data);
     // setReviews([...reviews, newReview]);
     event.target.focus();
-    onSubmit.addEventListener("click", onSubmit);
   };
 
   return (
@@ -57,7 +59,9 @@ function App() {
           <Dropdown />
           <ScaleRating />
           <ReviewForm />
-          <button type="submit">Submit</button>
+          <button type="submit" onClick={onSubmit}>
+            Submit
+          </button>
         </form>
       </div>
     </div>
