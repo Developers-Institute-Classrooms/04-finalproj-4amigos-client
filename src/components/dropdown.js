@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./review.css";
-import api from "../services/apiClient";
+import { instructors } from "../apiClient";
 
 const Dropdown = () => {
   const [dropDownItems, setDropDownItems] = useState([]);
 
   const fetchData = async () => {
     try {
-      const results = await api.instructors();
+      const results = await instructors();
       setDropDownItems(results);
     } catch (err) {
       console.error(`Error ${err.message}`);
